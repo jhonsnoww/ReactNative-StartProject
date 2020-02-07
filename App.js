@@ -5,23 +5,30 @@ export default function App() {
  
   return (
   
-    <View style={{padding:30 }}>
+    <View style={{padding:30 , flexDirection:'row',width:'80%',}}>
 
      <View style={{
-       flexDirection:'row',
+       height:100,
+       flex:1,
+       backgroundColor:'blue',
+       justifyContent:'space-between',//MainAxisAligment
+       alignItems:'stretch'//CrossAxisAligment
+       }}> 
+        <Text>1</Text>
+     </View>
+     <View style={{
+        height:100,
+        backgroundColor:'green',
        justifyContent:'space-between',
        alignItems:'baseline'}}> 
-
-     <TextInput placeholder="Enter Words" 
-      style={{
-        width:'80%',
-        borderWidth:1, 
-        borderColor:'black',
-        borderStyle:'solid'}} />
-   
-    <Button title="ADD"  style={{
-      padding:30,
-     }}/>
+       <Text>2</Text>
+     </View>
+     <View style={{
+        height:100,
+        backgroundColor:'red',
+       justifyContent:'center',
+       alignItems:'baseline'}}> 
+       <Text>3</Text>
      </View>
     </View>
   );
